@@ -53,7 +53,7 @@ except NameError:
 def load_model(rand_region: int = 5, num_actions: int = 15, use_small: bool = False):
     """Load a model from the trained_models folder. Returns the policy and the hook."""
     model_name = "maze_i" if use_small else f"maze_I/model_rand_region_{rand_region}"
-    model_stub = f"trained_models/{model_name}.pth"
+    model_stub = f"../trained_models/{model_name}.pth"
 
     try:
         utils.cd_into_procgen_tools()
